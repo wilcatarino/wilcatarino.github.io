@@ -46,7 +46,7 @@ function processArticleTags(tags) {
     enableAsideContent();
     let asideTags = document.getElementById("aside-tags");
     tags.forEach(tag => {
-        let newTag = document.createElement("li");;
+        let newTag = document.createElement("li");
         newTag.innerHTML = articleTagFormat.replace("{{articleTagHref}}", tag).replace("{{articleTagName}}", tag);
         asideTags.appendChild(newTag);
     });
